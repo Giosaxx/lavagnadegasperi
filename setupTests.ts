@@ -17,7 +17,7 @@ Object.assign(globalThis, testPolyfills);
 PolyfillLocalStorage();
 
 vi.mock("@excalidraw/common", async (importOriginal) => {
-  const module = await importOriginal<typeof import("@excalidraw/common")>();
+  const module = await importOriginal<any>();
 
   return {
     ...module,

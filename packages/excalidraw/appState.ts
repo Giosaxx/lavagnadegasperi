@@ -68,7 +68,7 @@ export const getDefaultAppState = (): Omit<
     fileHandle: null,
     gridSize: DEFAULT_GRID_SIZE,
     gridStep: DEFAULT_GRID_STEP,
-    gridModeEnabled: false,
+    gridModeEnabled: true,
     isBindingEnabled: true,
     bindingPreference: "enabled",
     isMidpointSnappingEnabled: true,
@@ -108,7 +108,7 @@ export const getDefaultAppState = (): Omit<
     viewBackgroundColor: COLOR_PALETTE.white,
     zenModeEnabled: false,
     zoom: {
-      value: 1 as NormalizedZoomValue,
+      value: 0.5 as NormalizedZoomValue,
     },
     viewModeEnabled: false,
     showHyperlinkPopup: false,
